@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 600vh; /* will be adjusted */
+  background: linear-gradient(
+    179.95deg,
+    #1e2419 1.15%,
+    #3c4833 2.65%,
+    #3c4833 11.61%,
+    #1e2419 14.13%,
+    #1e2419 18.55%,
+    #3c4833 20.87%,
+    #353f2d 36.57%,
+    #1e2419 38.17%,
+    #1e2419 62.65%,
+    #353f2d 67.08%,
+    #353f2d 88.26%,
+    #222419 96.54%
+  );
+  /* Add other styles as needed */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
