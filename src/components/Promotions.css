@@ -1,0 +1,12 @@
+.slick-current .carousel-slide img {
+  /* for the centered (current) slide */
+  width: 818px;
+  height: 546px;
+}
+
+.carousel-slide img {
+  /* for non-centered slides */
+  width: 600px;
+  height: 400px;
+  margin: auto;
+}
