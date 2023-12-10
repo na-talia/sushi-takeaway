@@ -1,0 +1,36 @@
+.slick-current .carousel-slide img {
+  /* for the centered (current) slide */
+  width: 818px;
+  height: 546px;
+}
+
+.carousel-slide img {
+  /* for non-centered slides */
+  width: 600px;
+  height: 400px;
+  margin: auto;
+}
+
+.slick-slide:not(.slick-current) .carousel-slide img {
+  margin-top: 80px;
+}
+
+/* Custom styles for the arrows */
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  padding: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-prev {
+  left: 40px;
+}
+
+.slick-next {
+  right: 40px;
+}
