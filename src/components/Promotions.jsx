@@ -4,6 +4,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Promotions.css";
 
+const CustomPrevArrow = (props) => (
+  <div {...props} className="slick-prev">
+    Previous
+  </div>
+);
+
+const CustomNextArrow = (props) => (
+  <div {...props} className="slick-next">
+    Next
+  </div>
+);
+
 const Promotions = () => {
   const settings = {
     dots: true,
@@ -19,7 +31,11 @@ const Promotions = () => {
 
   return (
     <div className="">
-      <Slider {...settings}>
+      <Slider
+        {...settings}
+        prevArrow={<CustomPrevArrow />}
+        nextArrow={<CustomNextArrow />}
+      >
         <div className="carousel-slide">
           <img
             src={process.env.PUBLIC_URL + "/photo1702073570.jpeg"}
