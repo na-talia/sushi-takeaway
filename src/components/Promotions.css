@@ -1,0 +1,59 @@
+.slick-slider {
+  margin-top: 40px;
+}
+
+.slick-current .carousel-slide img {
+  /* for the centered (current) slide */
+  width: 818px;
+  height: 546px;
+}
+
+.carousel-slide img {
+  /* for non-centered slides */
+  width: 700px;
+  height: 450px;
+  margin: auto;
+}
+
+.slick-slide:not(.slick-current) .carousel-slide img {
+  margin-top: 50px;
+}
+
+/* Custom arrows */
+
+.slick-prev {
+  left: 23rem;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 25.5rem;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-size: 64px;
+  color: #fcefc5;
+}
+
+/* Dots */
+
+.slick-dots li button::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fcefc5;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button::before {
+  background-color: #fcefc5;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots {
+  bottom: -40px;
+}
