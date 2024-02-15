@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar";
 import Promotions from "./components/promotions/Promotions";
 import Slogan from "./components/Slogan";
 import Title from "./components/Title";
-import SushiCategoryContainer from "./components/sushi-by-category/SushiCategoryContainer";
+import SushiByCategory from "./components/sushi-by-category/SushiByCategory";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Promotions />
       <Slogan />
       <Title text="Test" />
-      <SushiCategoryContainer />
+      <SushiByCategory />
     </div>
   );
 }
