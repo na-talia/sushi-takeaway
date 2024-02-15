@@ -5,8 +5,9 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
+        mitr: ["Mitr", "sans-serif"],
       },
-      colors: { mainLight: "#FCEFC5", salmon: "#D76147" },
+      colors: { mainLight: "#FCEFC5", salmon: "#D76147", mainGrey: "#D6D6D6" },
     },
   },
   plugins: [],
