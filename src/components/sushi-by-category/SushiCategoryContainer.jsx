@@ -3,7 +3,7 @@ import React from "react";
 const SushiCategoryContainer = () => {
   return (
     <div
-      className="border-[1px] w-[196px] h-[204px] border-mainLight rounded-sm text-mainLight 
+      className="border-[1px] w-[196px] h-[204px] m-2.5 border-mainLight rounded-sm text-mainLight 
     font-montserrat font-medium hover:border-white hover:text-white"
     >
       <div className="overflow-hidden">
