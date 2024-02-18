@@ -5,6 +5,7 @@ import Promotions from "./components/promotions/Promotions";
 import Slogan from "./components/Slogan";
 import Title from "./components/Title";
 import SushiByCategory from "./components/sushi-by-category/SushiByCategory";
+import PopularProducts from "./components/PopularProducts";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Slogan />
       <Title text="Test" />
       <SushiByCategory />
+      <PopularProducts />
     </div>
   );
 }
