@@ -6,9 +6,9 @@ import Title from "./Title";
 const PopularProducts = () => {
   return (
     <div>
-      <Title text="PROV VORES LEKRE RETTER" />
+      <Title text="PRØV VORES LÆKRE RETTER" />
       <div className="flex justify-center mt-small">
-        <div className="grid grid-cols-4 gap-4 w-[53%]">
+        <div className="grid grid-cols-4 gap-3 w-[53%]">
           {/* Big Image */}
           <div className="col-span-2 row-span-2">
             <img
