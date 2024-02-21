@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Title from "../Title";
 import MockReviews from "./MockReviews";
+import { CustomPrevArrow, CustomNextArrow } from "../UI/CustomArrows.jsx";
 
 function Review({ review }) {
   return (
@@ -44,7 +45,7 @@ const Reviews = () => {
   );
 
   return (
-    <div className="text-white flex justify-center">
+    <div className="text-white flex justify-center relative">
       <div>
         <Title text="ANMELDELSER FRA VORES KUNDE" />
         <div className="flex overflow-x-auto mt-small">
@@ -52,20 +53,16 @@ const Reviews = () => {
             <Review key={review.id} review={review} />
           ))}
         </div>
-        <div className="flex justify-between mt-4">
-          <button
-            onClick={handlePrevClick}
-            className="bg-blue-500 text-white font-bold py-2 px-4 rounded"
-          >
-            Previous
-          </button>
-          <button
-            onClick={handleNextClick}
-            className="bg-blue-500 text-white font-bold py-2 px-4 rounded"
-          >
-            Next
-          </button>
-        </div>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          top: "70%",
+          transform: "translateY(-50%)",
+        }}
+      >
+        <CustomPrevArrow onClick={handlePrevClick} />
+        <CustomNextArrow onClick={handleNextClick} />
       </div>
     </div>
   );

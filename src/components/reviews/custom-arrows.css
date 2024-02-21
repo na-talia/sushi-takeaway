@@ -1,0 +1,7 @@
+/* Not used for now*/
+.custom-arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 150px;
+}
