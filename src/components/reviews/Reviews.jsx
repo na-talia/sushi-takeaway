@@ -85,7 +85,25 @@ const mockReviews = [
   },
 ];
 
-function Reviews() {
+const Review = ({ review }) => {
+  return (
+    <div className="flex-shrink-0 max-w-sm mx-4">
+      <ul className="border border-gray-300 rounded p-4">
+        <li>
+          <div>{review.id}</div>
+          <div>{review.rating}</div>
+          <p>{review.text}</p>
+          <p>{review.icon}</p>
+          <span>{review.name}</span>
+          <span>{review.time}</span>
+          <div>{review.google}</div>
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+const Reviews = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const reviewsPerPage = 4;
 
@@ -101,29 +119,20 @@ function Reviews() {
     );
   };
 
+  const visibleReviews = Array.from({ length: reviewsPerPage }).map(
+    (_, index) => {
+      const reviewIndex = (currentIndex + index) % mockReviews.length;
+      return mockReviews[reviewIndex];
+    }
+  );
+
   return (
     <div className="text-white">
       <Title text="ANMELDELSER FRA VORES KUNDE" />
       <div className="flex overflow-x-auto">
-        {Array.from({ length: reviewsPerPage }).map((_, index) => {
-          const reviewIndex = (currentIndex + index) % mockReviews.length;
-          const review = mockReviews[reviewIndex];
-          return (
-            <div className="flex-shrink-0 max-w-sm mx-4" key={review.id}>
-              <ul className="border border-gray-300 rounded p-4">
-                <li>
-                  <div>{review.id}</div>
-                  <div>{review.rating}</div>
-                  <p>{review.text}</p>
-                  <p>{review.icon}</p>
-                  <span>{review.name}</span>
-                  <span>{review.time}</span>
-                  <div>{review.google}</div>
-                </li>
-              </ul>
-            </div>
-          );
-        })}
+        {visibleReviews.map((review) => (
+          <Review key={review.id} review={review} />
+        ))}
       </div>
       <div className="flex justify-between mt-4">
         <button
@@ -134,12 +143,13 @@ function Reviews() {
         </button>
         <button
           onClick={handleNextClick}
-          className="bg-blue-500  text-white font-bold py-2 px-4 rounded"
+          className="bg-blue-500 text-white font-bold py-2 px-4 rounded"
         >
           Next
         </button>
       </div>
     </div>
   );
-}
+};
+
 export default Reviews;
