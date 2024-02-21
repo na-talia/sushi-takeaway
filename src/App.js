@@ -6,6 +6,7 @@ import Slogan from "./components/Slogan";
 import Title from "./components/Title";
 import SushiByCategory from "./components/sushi-by-category/SushiByCategory";
 import PopularProducts from "./components/PopularProducts";
+import Reviews from "./components/reviews/Reviews";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Title text="Test" />
       <SushiByCategory />
       <PopularProducts />
+      <Reviews />
     </div>
   );
 }
