@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "./Title";
 
-// Should be adjusted
+// 3 img instead of 4
 
 const PopularProducts = () => {
   return (
